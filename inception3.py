@@ -66,7 +66,7 @@ estop = EarlyStopping(monitor='val_loss', patience=5)
 setup_to_transfer_learning(model,base_model)
 history_tl = model.fit_generator(generator=train_generator,
                     steps_per_epoch=40,
-                    epochs=2,
+                    epochs=15,
                     validation_data=val_generator,
                     validation_steps=12,
                     class_weight='auto'
